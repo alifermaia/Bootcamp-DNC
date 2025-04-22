@@ -68,10 +68,12 @@
                 background-color: var(--cinza-dnc);
                 box-shadow: 1px 1px 10px var(--cinza-dnc);
                 cursor: pointer;
+                transform: scale(1.05);
+                transition-duration: 0.2s;
             }
 
         section{
-            height: 150vh;
+            height: 1300px;
             display: flex;
             flex-flow: column;
             align-items: center;
@@ -79,7 +81,7 @@
             margin-bottom: 100px;
         }
 
-            section header{
+            header{
                 color: white;
                 font-family: var(--fonte-padrao);
             }
@@ -107,3 +109,75 @@
                     font-weight: bold;
                     padding: 5px;
                 }
+
+            form{
+                color: white;
+                font-family: var(--fonte-padrao);
+                font-size: 30px;
+                font-weight: 600;
+                width: 600px;
+            }
+
+                .form-group{
+                    display: flex;
+                    flex-flow: column;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                    form input{
+                        border-radius: 10px;
+                        height: 45px;
+                        border: none;
+                        font-size: 20px;
+                        padding: 10px;
+                        background-color: #FFFFFFE5;
+                    }
+
+                    form input::placeholder{
+                        color: #39393980;
+                    }
+
+                        .checkbox-itens{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                            .checkbox-itens label{
+                                font-size: 25px;
+                            }
+
+                            input[type="checkbox"]{
+                                transform: scale(2.0);
+                            }
+
+                    form label{
+                        margin: 10px 0px 10px 0px;
+                    }
+
+                    button[type="submit"]{
+                        background-color: var(--azul-dnc);
+                        box-shadow: 3px 3px 20px 0px #0C70F240;
+                        border: none;
+                        cursor: pointer;
+
+                        width: 100%;
+                        height: 56px;
+                        border-radius: 10px;
+                        
+                        font-family: var(--fonte-padrao);
+                        font-weight: 600;
+                        font-size: 32px;
+
+                        color: white;
+
+                        margin-top: 20px;
+                    }
+
+                    button[type="submit"]:hover{
+                        transform: scale(0.99);
+                        transition-duration: 0.2s;
+                        background-color: var(--cinza-dnc);
+                        box-shadow: 1px 1px 10px var(--cinza-dnc);
+                    }
